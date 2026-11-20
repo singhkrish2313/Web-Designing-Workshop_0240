@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC College Admission 2026</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 20px;
+      color: #000;
+      background-color: #fff;
+    }
+
+    header, footer {
+      background-color: #161d73;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer {
+      padding: 12px;
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e4eaf5;
+      text-align: center;
+    }
+
+    /* Form Styling */
+    fieldset {
+      border: 1px solid #666;
+      padding: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 55%;
+      padding: 4px;
+    }
+
+    select {
+      padding: 4px;
+    }
+
+    textarea {
+      width: 95%;
+      height: 60px;
+      padding: 4px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 5px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ABC College Admission 2026</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="courses-heading">
+      <h2 id="courses-heading">Courses and Fees</h2>
+      <table>
+        <caption>Available Courses</caption>
+        <thead>
+          <tr>
+            <th scope="col">Course</th>
+            <th scope="col">Seats</th>
+            <th scope="col">Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Tech CSE</td>
+            <td>120</td>
+            <td>&#8377;90,000</td>
+          </tr>
+          <tr>
+            <td>BCA</td>
+            <td>60</td>
+            <td>&#8377;45,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-label="Student Application">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Application Form</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="course">Course:</label>
+          <select id="course" name="course" required>
+            <option value="btech-cse">B.Tech CSE</option>
+            <option value="bca">BCA</option>
+          </select>
+
+          <label for="statement">Statement:</label>
+          <textarea id="statement" name="statement" required></textarea>
+
+          <div>
+            <button type="submit">Apply</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ABC College</p>
+  </footer>
+
+</body>
+</html>

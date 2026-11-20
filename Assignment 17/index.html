@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 17: Form Attributes and Input Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      display: block;
+      margin-bottom: 12px;
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="submit.php" method="POST">
+    <!-- Full name -->
+    <input type="text" name="fullname" placeholder="Full name" required>
+
+    <!-- Email -->
+    <input type="email" name="email" placeholder="you@college.edu" required>
+
+    <!-- 10-digit mobile -->
+    <input type="tel" name="mobile" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+
+    <!-- Password -->
+    <input type="password" name="password" placeholder="Min 6 characters" minlength="6" required>
+
+    <!-- Age -->
+    <input type="number" name="age" placeholder="Age (17-30)" min="17" max="30" required>
+
+    <!-- Submit button -->
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>

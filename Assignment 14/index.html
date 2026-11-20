@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 14: Nested and Responsive Tables</title>
+  <style>
+    /* Container that enables horizontal scrolling on small screens */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      padding: 15px;
+    }
+
+    /* Outer table styling */
+    .main-table {
+      border-collapse: collapse;
+      font-family: Georgia, serif;
+      min-width: 550px; /* Forces scroll on screens narrower than 550px */
+    }
+
+    .main-table > thead > tr > th,
+    .main-table > tbody > tr > td {
+      border: 1px solid #888;
+      padding: 10px 14px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    /* Inner (nested) table styling */
+    .nested-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .nested-table th,
+    .nested-table td {
+      border: 1px solid #888;
+      padding: 8px 12px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Responsive Wrapper -->
+  <div class="table-container">
+    <table class="main-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Lab Batches</th>
+          <th>Faculty</th>
+          <th>Room</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Friday</td>
+          <td>
+            <!-- Nested Table inside the second cell -->
+            <table class="nested-table">
+              <thead>
+                <tr>
+                  <th>Batch</th>
+                  <th>System</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A1</td>
+                  <td>PC 1-20</td>
+                </tr>
+                <tr>
+                  <td>A2</td>
+                  <td>PC 21-40</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td>Dr. Sharma</td>
+          <td>Lab 2</td>
+          <td>2-4 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
